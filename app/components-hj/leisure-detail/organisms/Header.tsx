@@ -28,7 +28,7 @@ export default function Header({
     kakaoSdk.defer = true;
     kakaoSdk.src = 'https://developers.kakao.com/sdk/js/kakao.min.js';
     kakaoSdk.onload = function () {
-      window.Kakao.init(process.env.NEXT_PUBLIC_KAKAO_API_KEY);
+      window.Kakao.init(process.env.NEXT_PUBLIC_KAKAO_KEY);
     };
     document.head.appendChild(kakaoSdk);
   }, []);
