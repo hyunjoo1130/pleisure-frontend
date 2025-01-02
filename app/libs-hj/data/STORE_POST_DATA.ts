@@ -3,11 +3,11 @@ import { IStores } from '@/app/libs-hj/types/IStores';
 export const STORE_POST_DATA: IStores = {
   storeId: '1',
   storeImageUrls: [
-    { id: 1, imgUrl: '/images-hj/leisure-detail/test-slide-img1.jpeg' },
-    { id: 2, imgUrl: '/images-hj/leisure-detail/test-slide-img2.jpeg' },
-    { id: 3, imgUrl: '/images-hj/leisure-detail/test-slide-img3.jpeg' },
-    { id: 4, imgUrl: '/images-hj/leisure-detail/test-slide-img1.jpeg' },
-    { id: 5, imgUrl: '/images-hj/leisure-detail/test-slide-img2.jpeg' },
+    '/images-hj/leisure-detail/test-slide-img1.jpeg',
+    '/images-hj/leisure-detail/test-slide-img2.jpeg',
+    '/images-hj/leisure-detail/test-slide-img3.jpeg',
+    '/images-hj/leisure-detail/test-slide-img1.jpeg',
+    '/images-hj/leisure-detail/test-slide-img2.jpeg',
   ],
   storeName: '핫한 여름, 가평빠지월드가 더 핫해진 익스트림 레저로 초대합니다.',
   storeStatus: 'OPENNING',

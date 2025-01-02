@@ -1,6 +1,6 @@
 export interface IStores {
   storeId?: string;
-  storeImageUrls?: { id: number; imgUrl: string }[]; // * ✅ 내가 임의로 객체타입 만듬
+  storeImageUrls?: string[];
   storeName?: string; // storeName이 storeContent
   storeStatus?: 'OPENNING' | 'CLOSING' | 'SHUT_DOWN';
   storeCategories?: {

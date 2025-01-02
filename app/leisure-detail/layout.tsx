@@ -7,7 +7,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="w-screen bg-grayBg">
       <div className="container relative max-w-md min-w-[360px] m-auto text-grayTxt pb-24 bg-white">
-        <Header storeName={STORE_POST_DATA.storeName} />
+        <Header
+          storeName={STORE_POST_DATA.storeName}
+          storeImageUrl={STORE_POST_DATA.storeImageUrls![0]}
+          address={STORE_POST_DATA.storeAddress}
+        />
         {children}
         {/* 예약하기 버튼 */}
         <Button
