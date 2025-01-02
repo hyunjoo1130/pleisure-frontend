@@ -10,10 +10,11 @@ declare global {
 
 export default function Map() {
   useEffect(() => {
+    const kakaoKey = process.env.NEXT_PUBLIC_KAKAO_KEY;
     const kakaoMapScript = document.createElement('script');
     kakaoMapScript.async = true;
     kakaoMapScript.src =
-      '//dapi.kakao.com/v2/maps/sdk.js?appkey=631346306c13cc99e35393e71852c215&autoload=false';
+      `//dapi.kakao.com/v2/maps/sdk.js?appkey=${kakaoKey}&autoload=false`;
     document.head.appendChild(kakaoMapScript);
 
     const onLoadKakaoAPI = () => {
